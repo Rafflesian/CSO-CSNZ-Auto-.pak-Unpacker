@@ -22,13 +22,18 @@ def fnParseDirectory(szPrompt: str, szSuffix: str = ""):
         if(szSuffix):
 
             if(not pPath.is_file()):
-                print(f"Provided directory is not a file");
+                print(f"Provided route is not an '{szSuffix}' file");
                 continue;
         
             if(pPath.suffix.lower() != szSuffix):
                 print(f"Provided file doesn't match suffix '{szSuffix}'");
                 continue;
+        else:
 
+            if(not pPath.is_dir()):
+                print("Provided route is not a directory");
+                continue;
+        
         break;
 
     return szReturn;
