@@ -4,6 +4,6 @@ Automatic extractor for 'common_xxxxx.pak' files from CSO/CSNZ with certain indi
 How to use:
 Provide 3 paths
 
-- Unpacker path
+- Unpacker path (must be an .exe)
 - .pak path
 - Output path
